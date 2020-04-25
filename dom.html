@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <script src="kas.js"></script>
+  <title>DOM maip</title>
+  <link href="style.css" rel="stylesheet">
+ </head>
+<body bgcolor="#F9D342">
+ <header>
+  <br><section>
+       Select Difficulty:
+        <select id="chaos" onchange="changedif(this.value);"> 
+         <option value="20">Easy</option>
+         <option value="42">Medium</option>
+         <option value="72">Hard</option>
+        </select>
+      <span id="timer">Time: 0.0</span>
+      <span id="best">Best: 0.0</span> 
+      </section>
+  <p>Click the numbers<br>as quickly as you can!</p>
+ </header> 
+ <button id='120' onclick="start(this.id);">Start</button>
+ <button id='240' onclick="reset(this.id);">Reset</button>
+ <br><br><br>
+ <div id="test" class="c">        </div>
+</body>
+</html>
